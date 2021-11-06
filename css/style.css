@@ -1,0 +1,231 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: white; /*#ddd;*/
+	font-size: 18px;
+	font-family: Helvetica, 'Monteserrat', sans-serif;
+	/*font-weight: lighter;*/
+	margin: 0;
+	padding: 0;
+}
+
+/*FIXME Make header look nice */
+header{
+	text-align: center;
+	color: #152238;
+	padding: 20px;
+	letter-spacing: 2px;
+	width: 100%;
+}
+
+nav{
+	background-color: white; /*#ddd;*/
+	/*padding:  25px 0;
+	text-transform: uppercase;*/
+	letter-spacing: 2px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	/*display: inline;*/
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+
+nav a{
+	color: #152238;
+	text-decoration: none;
+}
+
+nav a:hover{
+	font-weight: bold;
+	font-style: italic;
+	color: #5e7b51;/* #009C9D;*/ 
+	/*#152238;*/
+	/* text-shadow: 3px 3px #009C9D;
+	transition: 0.3s ease;*/
+	border-right: solid;
+	border-bottom: solid; 
+	border-color: black;
+	border-bottom-right-radius: 8px;
+	padding: 3px 5px;
+}
+
+/* remember to fill in for accessibility */
+:focus{
+	border-width: 2px;
+	border-style: solid;
+}
+
+/*need different soln because not working*/
+
+/* makes menu items bold and backshadowed when current page */
+nav .current{
+	font-weight: bold;
+	/*font-style: italic;*/
+	color: #5e7b51; /*#009C9D; #152238;*/
+	/* text-shadow: 3px 3px #009C9D;*/
+	transition: 0.3s ease;
+	border-bottom: solid;
+	border-right: solid; 
+	border-bottom-right-radius: 8px;
+	padding: 3px 5px 3px 20px;
+
+}
+
+.about-page{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 20px;
+}
+
+.about-page img{
+	grid-column: 2 / span 1;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.about-page h1{
+	grid-column: 2 / span 2;
+	font-weight: normal;
+	color: #152238;
+	letter-spacing: 2px;
+}
+
+.about-page p{
+	grid-column: 2 / span 1;
+	color: #152238;
+	line-height: 30px;
+}
+
+.other{
+	color: #152238;
+	text-align: center;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+.other h2{
+	padding-top: 20px;
+}
+
+.other h3{
+	font-weight: normal;
+}
+
+.gallery{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+	padding: 20px;
+}
+
+.gal_img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery h2{
+	text-align: center;
+	color: #152238;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+.resume-text{
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #152238;
+	font-weight: lighter;
+	line-height: 20px;
+}
+
+.resume-text h1{
+	text-align: center;
+	font-size: 24px;
+	padding: 5px;
+	letter-spacing: 2px;
+}
+
+.resume-text h2{
+	
+}
+
+.resume-text h3{
+	font-style: italic;
+	font-weight: normal;
+}
+/*
+nav .current:after{
+	content: "🪴";
+}
+U+1FAB4*/
+
+/*does quite work as desired
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+
+
+.row img{
+	max-width: 300px;
+	height: auto;
+}
+
+.column img{
+	max-width: 100%;
+	height: auto;
+}
+*/
+/*
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+*/
+
+#headshot{
+	align-items: center;
+}
+
+p{
+	padding: 20px;
+	text-align: center;
+}
+
+footer{
+	background-color: white; /*#ddd;*/
+	color: #152238;
+	padding-top: 30px;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+/*FIXME:  design for when narrow enough because menu collapses in way that words overlap*/
